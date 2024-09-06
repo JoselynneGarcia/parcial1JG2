@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Editar Producto</title>
 </head>
@@ -28,9 +29,8 @@
         <label for="" class="form-label">Tipo de Producto_id: </label>
         <input type="text" name="tipo_producto_id" id="" class="form-control" value="<?=$producto['tipo_producto_id']?>"><br>
     </div>
-
-    <input type="submit" value="Actualizar" class="form-control">
     </form>
-    <a href="<?= site_url('productos')?>" class="btn btn-secondary">Cancelar</a>
+    <button type="submit" class="btn btn-primary"><i class="bi bi-arrow-repeat"></i> Actualizar</button>
+    <a href="<?= site_url('productos')?>" class="btn btn-secondary"><i class="bi bi-x-circle"></i>Cancelar</a>
 </body>
 </html>
