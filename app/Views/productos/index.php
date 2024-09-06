@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Productos</title>
 </head>
 <body class="container mt-5">
     <h1 class="mb-4">Productos</h1>
-    <a href="<?=site_url('productos/create')?>" class="btn btn-primary mb-3"> Crear nuevo producto</a>
+    <a href="<?=site_url('productos/create')?>" class="btn btn-success mb-3"> <i class="bi bi-plus-circle"></i>Crear nuevo producto</a>
 
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
@@ -32,8 +33,8 @@
                     <td><?= $producto['fecha_vencimiento']?></td>
                     <td><?= $producto['tipo_producto_id']?></td>
                     <td>
-                        <a href="<?= site_url('productos/edit/'.$producto['producto_id'])?>" class="btn btn-warning btn-sm">Editar</a>
-                        <a href="<?= site_url('productos/delete/'.$producto['producto_id']) ?>" class="btn btn-danger btn-sm"  onclick="return confirm('¿Seguro de eliminar?')">Eliminar</a>
+                        <a href="<?= site_url('productos/edit/'.$producto['producto_id'])?>" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square"></i>Editar</a>
+                        <a href="<?= site_url('productos/delete/'.$producto['producto_id']) ?>" class="btn btn-danger btn-sm"  onclick="return confirm('¿Seguro de eliminar?')"><i class="bi bi-trash"></i>Eliminar</a>
                 </td>
                 </tr>
                 <?php endforeach; ?>
