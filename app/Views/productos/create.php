@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Crear Producto</title>
 </head>
@@ -22,9 +24,9 @@
             <label for="" class="form-label">Tipo de Producto_id: </label>
             <input type="text" name="tipo_producto_id" id="" class="form-control"><br>
         </div>
-        <button type="submit">Guardar</button>
+        <button type="submit" class="btn btn-success"><i class="bi bi-save"></i> Guardar
     </form>
-    <a href="<?= site_url('productos')?>">Volver</a>
+    <a href="<?= site_url('productos')?>"><i class="bi bi-arrow-left"></i> Volver</a>
     
 </body>
 </html>
